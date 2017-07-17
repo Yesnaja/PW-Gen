@@ -17,7 +17,6 @@
 		<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<script src="qtip/jquery.qtip.min.js"></script>
 		<link href="qtip/jquery.qtip.min" rel="stylesheet">
-
 	</head>
 	<body>
 		<div id="header">
@@ -105,8 +104,5 @@
 				</div>
 			</form>
 		</div>
-		<script>
-			$('[title]').qtip();
-		</script>
 	</body>
 </html>
