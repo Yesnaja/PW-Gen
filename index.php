@@ -89,10 +89,10 @@
 							$pool=$pw->removeLetters($_POST["not_letters"], $pool);
 							$ln=$_POST["pw_size"];
 							if($_POST["PW_Count"]=="1"){
-								echo("<p>Das generierte Passwort lautet: </p><br>");
+								echo("<p>Das gewünschte Passwort lautet: </p><br>");
 							}
 							else{
-								echo("<p>Die generierten Passwörter lauten: </p><br>");
+								echo("<p>Die gewünschten Passwörter lauten: </p><br>");
 							}
 							for($i=0; $i<$_POST["PW_Count"];$i++)
 							{
