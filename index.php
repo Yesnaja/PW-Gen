@@ -27,7 +27,7 @@
 				<div id="form">
 					<table>
 						<tr>
-							<td><p title="Wie viele Passwörter wollen sie Generieren?">Anzahl Passwörter:</p></td>
+							<td>Anzahl Passwörter:</td>
 							<td>
 								<select name="PW_Count">
 									<option name="1" <?php if(isset($_POST["PW_Count"]) && $_POST["PW_Count"]=="1") echo "selected"; ?>>1</option>
@@ -37,23 +37,23 @@
 									<option name="20" <?php if(isset($_POST["PW_Count"]) && $_POST["PW_Count"]=="20") echo "selected"; ?>>20</option>
 								</select>
 							</td>
-							<td title="z.B. a,b,c,d,...">Kleinbuchstaben:</td>
+							<td>Kleinbuchstaben:</td>
 							<td><input type="checkbox" name="sm_letters" <?php if(isset($_POST['sm_letters'])) echo "checked='checked'"; ?>></td>
 						</tr>
 						<tr>
-							<td title="Wie viele Zeichen soll das Passwort haben">Länge:</td>
+							<td>Länge:</td>
 							<td><input type="text"  name="pw_size" value="<?php if(isset($_POST['pw_size'])) { echo htmlentities ($_POST['pw_size']); } else{ echo "8";} ?>" /></td>
-							<td title="z.B. A,B,C,D,...">Großbuchstaben:</td>
+							<td>Großbuchstaben:</td>
 							<td><input type="checkbox" name="lg_letters" <?php if(isset($_POST['lg_letters'])) echo "checked='checked'"; ?>></td>
 						</tr>
 						<tr>
-							<td title="z.B.!,§,$,%,&,/,(,),=,?">Sonderzeichen:</td>
+							<td>Sonderzeichen:</td>
 							<td><input type="text" name="sp_letters" value="<?php if(isset($_POST['sp_letters'])) { echo htmlentities ($_POST['sp_letters']); } else{ echo "!?@(){}[]\/=~$%&#*-+.,_";} ?>" /></td>
-							<td title=" 0,1,2,3,4,5,6,7,8,9">Zahlen:</td>
+							<td>Zahlen:</td>
 							<td><input type="checkbox" name="numbers" <?php if(isset($_POST['numbers'])) echo "checked='checked'"; ?>></td>
 						</tr>
 						<tr>
-							<td title="Es wird Empfohlen I und l auszulassen, da diese sehr ähnlich aussehen">Zeichen auslassen:</td>
+							<td>Zeichen auslassen:</td>
 							<td><input type="text" name="not_letters" value="<?php if(isset($_POST['not_letters'])) { echo htmlentities ($_POST['not_letters']); } else{ echo "IlyYzZO0";} ?>" /></td>
 						</tr>
 					</table>
